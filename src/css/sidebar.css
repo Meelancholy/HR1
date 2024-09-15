@@ -1,0 +1,15 @@
+.sidebar {
+    transform: translateX(-100%); /* hide the sidebar by default */
+  }
+  
+  input[type="checkbox"]:checked ~ .sidebar {
+    transform: translateX(0); /* show the sidebar when the checkbox is checked */
+  }
+  
+  .main-content {
+    transition: margin-left 0.3s ease-in-out; /* animate the main content when the sidebar is shown/hidden */
+  }
+  
+  input[type="checkbox"]:checked ~ .main-content {
+    margin-left: 240px; /* push the main content to the right when the sidebar is shown */
+  }
