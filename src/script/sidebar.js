@@ -7,9 +7,9 @@
     
     toggleButton.addEventListener('click', () => {
       drawer.classList.toggle('translate-x-0');
-      navbar.classList.toggle('pl-64');
-      mainContent.classList.toggle('ml-64');
-      breadcrumbs.classList.toggle('left-64');
+      navbar.classList.toggle('pl-80');
+      mainContent.classList.toggle('ml-80');
+      toggleButton.classList.toggle('ml-80'); // Add this line
     });
 
     const departmentLink = document.querySelector('.department-link');
@@ -21,9 +21,9 @@
     
     departmentLink.addEventListener('click', () => {
       departmentList.classList.toggle('hidden');
-      arrowIcondep.classList.toggle('rotate-180');
+      arrowIcondep.classList.toggle('rotate-element');
     });
     employeeLink.addEventListener('click', () => {
       employeeList.classList.toggle('hidden');
-      arrowIconemp.classList.toggle('rotate-180');
+      arrowIconemp.classList.toggle('rotate-element');
     });
